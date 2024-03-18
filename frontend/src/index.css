@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+
+/* Custom scrollbar styles to hide only the scrollbar thumb */
+.scrollbar-hidden {
+
+  scrollbar-width: none !important;
+
+
+}
+
+.heading-color{
+  color:#001b33;
+}
+.bullet-points {
+  width: full;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.bullet-point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fb8c00;
+
+}
+
+.active-bullet {
+  width: 30px;
+  border-radius: 30%;
+}
