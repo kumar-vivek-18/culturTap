@@ -71,14 +71,14 @@ const About = () => {
     return (
         <div className='max-lg:px-[30px] mx-auto lg:ml-[180px] mt-[20px] max-sm:pt-[100px]'>
             <div className='lg:mr-[186px]'>
-                <h2 className='text-[40px] font-extrabold heading-color max-sm:text-[28px]'>About Us</h2>
-                <p className='text-[16px] mt-[43px] max-sm:mt-[20px]'>Culturtap is a travel based community app that aims to make your travel easier by providing real-time updates and connecting you with people whenever you need help to makes your travel easier, safer and enjoyable.
+                <h2 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>About Us</h2>
+                <p className='text-[14px] mt-[43px] max-sm:mt-[20px]'>Culturtap is a travel based community app that aims to make your travel easier by providing real-time updates and connecting you with people whenever you need help to makes your travel easier, safer and enjoyable.
                 </p>
-                <p className='text-[16px] mt-[25px]'>
+                <p className='text-[14px] mt-[25px]'>
                     <span className='font-bold'>Download CulturTap app:</span>  which helps you to explore the whole culture of your selected destinations with just a few taps!
                     Plan better - explore more!
                 </p>
-                <p className='text-[16px] mt-[25px]'>
+                <p className='text-[14px] mt-[25px]'>
                     Choose your destinations, CulturTap presents you the real-time updates, including popular visits, top-rated restaurants, trending locations, outskirts, traditional fashion, nearby pubs and cafes, street food, historical heritage, festivals, handy crafts, service shops and business shops etc.
                 </p>
             </div>
@@ -87,8 +87,8 @@ const About = () => {
 
             }
             <div className='mt-[76px]'>
-                <h2 className='text-[40px] font-extrabold heading-color max-sm:text-[28px]'>Services</h2>
-                <p className=''>We offered services related to tour planning & tourist safety. </p>
+                <h2 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>Services</h2>
+                <p className='test-[14px]'>We offered services related to tour planning & tourist safety. </p>
                 <div className='flex max-md:flex-col max-md:items-center mt-[44px] gap-[25px]'>
 
                     {
@@ -96,8 +96,8 @@ const About = () => {
                             return (
                                 <div key={service.id} className='w-[325px] h-[505px] rounded-3xl shadow-md'>
                                     <img src={service.link} alt="services" className="object-none rounded-t-3xl" />
-                                    <h3 className='w-3/5 mt-[35px] flex heading-color text-[20px] mx-auto justify-center text-center font-bold '>{service.title}</h3>
-                                    <p onClick={() => { openModal(); setModalData(service); }} className='w-[max-content] mx-auto justify-center cursor-pointer mt-[31px] text-[16px] text-[#fbbc00] border-b-2 border-[#fbbc00] pb-1'>Know more</p>
+                                    <h3 className='w-3/5 mt-[35px] flex heading-color text-[18px] mx-auto justify-center text-center font-bold '>{service.title}</h3>
+                                    <p onClick={() => { openModal(); setModalData(service); }} className='w-[max-content] mx-auto justify-center cursor-pointer mt-[31px] text-[14px] text-[#fbbc00] border-b-2 border-[#fbbc00] pb-1'>Know more</p>
                                     {/* {console.log('servidceee', service)}; */}
                                     {/* <ServicesModal isOpen={isOpen} onClose={closeModal} service={service} /> */}
 
@@ -106,14 +106,14 @@ const About = () => {
                         })
                     }
 
-                    <div className='max-sm:-ml-[85px] w-[325px]'>
-                        <p className='text-[20px] heading-color font-bold'>More opportunities for <br />
+                    <div className=' w-[325px] '>
+                        <p className='text-[18px] heading-color font-bold'>More opportunities for <br />
                             ground audience.</p>
-                        <p className='text-[16px] mt-[17px]'>We are dedicate to serve humanity <br />
+                        <p className='text-[14px] mt-[17px]'>We are dedicate to serve humanity <br />
                             better and make this earth a better <br />
                             place to live on. </p>
-                        <p className='text-[16px] text-[#fb8c00] w-[max-content] border-b-2 border-[#fb8c00] mt-[22px]'>Upcoming Launch</p>
-                        <p className='text-[16px] text-[#fb8c00] w-[max-content] border-b-2 border-[#fb8c00] mt-[17px]'>What's next?</p>
+                        <p className='text-[14px] text-[#fb8c00]  w-[max-content] border-b-2 border-[#fb8c00] mt-[22px]'>Upcoming Launch</p>
+                        <p className='text-[14px] text-[#fb8c00] w-[max-content] border-b-2 border-[#fb8c00] mt-[17px]'>What's next?</p>
                     </div>
 
 

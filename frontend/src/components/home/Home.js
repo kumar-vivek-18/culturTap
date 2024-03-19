@@ -139,14 +139,7 @@ const Home = () => {
         }
     ]
 
-    // Function to calculate active index based on scroll position
-    // const calculateActiveIndex = () => {
-    //     const contentElement = contentRef.current;
-    //     const scrollLeft = contentElement.scrollLeft;
-    //     const containerWidth = 370;
-    //     const activeIndex = Math.round(scrollLeft / containerWidth);
-    //     setActiveIndex(activeIndex);
-    // };
+
 
 
     const calculateActiveIndex = () => {
@@ -199,26 +192,6 @@ const Home = () => {
         };
     }, []);
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         calculateActiveIndex();
-    //     };
-
-    //     contentRef.current.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         contentRef?.current?.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
-    // const contentRef = useRef(null);
-
-    // useEffect(() => {
-    //     const scrollContent = contentRef.current;
-    //     const scrollWidth = scrollContent.scrollWidth;
-    //     const animationDuration = (scrollWidth / 100) * 1; // Adjust speed as needed
-    //     scrollContent.style.animationDuration = `${animationDuration}s`;
-    // }, []);
     return (
         <div className='w-screen md:mt-[60px] max-sm:pt-[100px] -z-50'>
             <div className='pl-[10px] mr-[10px] mx-auto sm:pl-[50px] sm:pr-[20px] lg:pl-[197px] lg:pr-[150px]'>
@@ -231,7 +204,7 @@ const Home = () => {
                             <div className='w-full flex justify-center pt-[18px]'>
                                 <img src={item.link} alt="scrollers" loading='lazy' className='w-[300px] h-[200px] lg:w-[340px] lg:h-[250px] scale-105 -z-50' />
                             </div>
-                            <div className='text-[20px] flex justify-center pt-[60px]'>{item.title}</div>
+                            <div className='text-[18px] flex justify-center pt-[60px]'>{item.title}</div>
                         </div>
                     ))}
 
@@ -257,8 +230,8 @@ const Home = () => {
 
 
             <div className='w-full flex flex-col pl-[20px] sm:pl-[50px] lg:pl-[220px] mt-[45px]'>
-                <div className='text-[40px] font-extrabold heading-color max-sm:text-[28px]'>New Locations?</div>
-                <div className='text-[16px]'>Explore the culture of your next destination</div>
+                <div className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>New Locations?</div>
+                <div className='text-[14px]'>Explore the culture of your next destination</div>
             </div>
 
             <div className='w-screen flex flex-wrap  lg:pl-[180px] gap-[20px] mt-10 max-lg:justify-center'>
@@ -269,7 +242,7 @@ const Home = () => {
                         </div>
                     ))
                 }
-                <div className='w-[100px] h-[100px] md:w-[140px] md:h-[140px] flex justify-center items-center bg-[#ddd8b1] rounded-lg font-semibold text-[20px] p-2'>
+                <div className='w-[100px] h-[100px] md:w-[140px] md:h-[140px] flex justify-center items-center bg-[#ddd8b1] rounded-lg font-semibold text-[18px] p-2'>
                     & lot more...
                 </div>
             </div>
