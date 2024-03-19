@@ -34,7 +34,7 @@ const Earn = () => {
                         Set yourself a Immediate local assistant & Earn money !</p>
                     <p className='text-[14px] mt-6 font-semibold text-[#2e2c43]'>Download app now to know more....</p>
                 </div>
-                <div className='md:transform md:scale-150'>
+                <div className='md:transform md:scale-150 max-md:scale-125'>
                     <img src={earning2} alt="logo" loading='lazy' width="325px" height="304px" className='scale-125' />
                 </div>
             </div>
