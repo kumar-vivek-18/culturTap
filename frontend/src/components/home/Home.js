@@ -257,7 +257,7 @@ const Home = () => {
 
 
             <div className='w-full flex flex-col pl-[20px] sm:pl-[50px] lg:pl-[220px] mt-[45px]'>
-                <div className='text-[40px] font-bold heading-color max-sm:text-[28px]'>New Locations?</div>
+                <div className='text-[40px] font-extrabold heading-color max-sm:text-[28px]'>New Locations?</div>
                 <div className='text-[16px]'>Explore the culture of your next destination</div>
             </div>
 

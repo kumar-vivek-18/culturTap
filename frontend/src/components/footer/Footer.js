@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
                 <div className='max-sm:hidden'>
                     <p className='flex text-[#2e2c43] font-bold'>Help Center</p>
-                    <p className='flex flex-col '><Link to='/contact/report'> Report Concern </Link> <Link to='/contact'>Contact Us</Link> </p>
+                    <p className='flex flex-col '><Link to='/contact/report'> Report Concern </Link> <Link to='/contact'>Contact Us</Link> <Link >Terms and Conditions</Link></p>
                     <p className='flex mt-[15px] font-bold text-[#2e2c43]'>Careers</p>
                     <p>Open Opportunities</p>
                 </div>

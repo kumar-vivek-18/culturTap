@@ -81,11 +81,11 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='w-full flex '>
-                    <a href="#" className='pt-[46px]'>
-                        <img src={appStore} alt="appStore" width="135px" height="44px" />
+                    <a href="#" className='pt-[60px]'>
+                        <img src={appStore} alt="appStore" width="100px" height="44px" />
                     </a>
-                    <a href="#" className='pt-[36px]'>
-                        <img src={playStore} alt="playStore" width="153px" height="64px" />
+                    <a href="#" className='pt-[52px]'>
+                        <img src={playStore} alt="playStore" width="120px" height="64px" />
                     </a>
                 </div>
             </div>

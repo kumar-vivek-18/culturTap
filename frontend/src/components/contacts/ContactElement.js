@@ -49,7 +49,7 @@ const ContactElement = ({ details }) => {
     return (
         <div className='max-lg:pl-[0px] lg:ml-[180px] md:mt-[66px] max-sm:pt-[100px] overflow-hidden'>
             <div className='max-lg:pl-[30px] '>
-                <h2 className='text-[40px] heading-color font-bold  max-sm:text-[28px]'>{details.type}</h2>
+                <h2 className='text-[40px] heading-color font-extrabold  max-sm:text-[28px]'>{details.type}</h2>
                 <p className='text-[16px] text-[#001b33]'>{details.title}</p>
             </div>
 

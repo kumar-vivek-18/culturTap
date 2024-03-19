@@ -7,7 +7,7 @@ const Earn = () => {
     return (
         <div className='max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px]'>
             <div>
-                <h2 className='text-[40px] heading-color font-bold  max-sm:text-[28px]'>Earn with us!</h2>
+                <h2 className='text-[40px] heading-color font-extrabold  max-sm:text-[28px]'>Earn with us!</h2>
                 <p>Help others to start your earnings.  </p>
             </div>
             <div className='flex max-md:flex-col gap-4 md:gap-[135px] md:mt-[50px] items-center'>
