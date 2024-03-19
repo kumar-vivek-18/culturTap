@@ -150,10 +150,10 @@ const Home = () => {
 
 
     const calculateActiveIndex = () => {
-        const contentElement = contentRef.current;
-        const scrollLeft = contentElement.scrollLeft;
+        const contentElement = contentRef.current ?? 0;
+        const scrollLeft = contentElement.scrollLeft ?? 0;
         const containerWidth = 300;
-        const totalWidth = contentElement.scrollWidth;
+        const totalWidth = contentElement.scrollWidth ?? 0;
         let newIndex;
 
         if (scrollLeft === 0) {
