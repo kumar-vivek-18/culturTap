@@ -54,10 +54,10 @@ const Footer = () => {
                 <p className='text-[#2e2c43] font-bold mt-[25px] mb-[10px]'>Download App</p>
                 <div className='flex'>
                     <a href='#' className='pt-[12px] cursor-pointer'>
-                        <img src={appStore} alt="logo" loading='lazy' />
+                        <img src={appStore} alt="logo" loading='lazy' width="100px" height="44px" />
                     </a>
-                    <a href='#' className='cursor-pointer'>
-                        <img src={playStore} alt="logo" loading='lazy' />
+                    <a href='#' className='cursor-pointer pt-1 '>
+                        <img src={playStore} alt="logo" loading='lazy' width="120px" height="64px" />
                     </a>
                 </div>
 
