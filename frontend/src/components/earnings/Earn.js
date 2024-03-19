@@ -12,7 +12,7 @@ const Earn = () => {
         if (location.search.includes("termandcondition")) {
             console.log('location');
             window.scrollTo({
-                top: 1200,
+                top: 1100,
                 behavior: 'smooth'
             });
         }
