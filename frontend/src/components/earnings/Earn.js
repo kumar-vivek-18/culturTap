@@ -41,7 +41,7 @@ const Earn = () => {
 
             <div className='mt-[30px] md:mt-[100px] md:w-10/12'>
                 <h3 className='text-[14px] font-bold text-[#ff2e00]'>Terms and Conditions:</h3>
-                <p className='text-[14px] text-[#ff2e00]'>We will deduct 20% of the amount of your earnings set. It will cover the charges of payment gateways, taxes, small bucks for our R&D to serve you better in future.
+                <p className='text-[14px] text-[#ff2e00]'>We will deduct 20% of the amount of your earnings set. It will cover the charges of payment gateways, taxes and small bucks for our R&D to serve you better in future.
 
                 </p>
                 <p className='text-[14px]  text-[#ff2e00] mt-4'>The customer is directly chargeable for 4% international exchange charges & 3% for payment gateway charges.
