@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../../index.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ContactElement = ({ details }) => {
     const [data, setData] = useState({
         name: "",
-        countryCode: "+91",
+        countryCode: "",
         mobileNo: "",
         email: "",
         concern: "",
@@ -20,24 +23,37 @@ const ContactElement = ({ details }) => {
 
             const apiuri = process.env.REACT_APP_API_URL;
 
+            try {
 
-            if (details.type === "Contact us!") {
+
+                if (details.type === "Contact us!") {
 
 
-                const res = await axios.post(`${apiuri}/contact`, data);
+                    const res = await axios.post(`${apiuri}/contact`, data);
 
-                setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
+                    if (res) {
+                        toast.success("Send Successfully");
+                    }
+                    console.log('res', res);
+                    setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
 
-            }
-            else {
-                const res = await axios.post(`${process.env.REACT_APP_API_URL}/query`, {
-                    name: data.name,
-                    countryCode: data.countryCode,
-                    mobileNo: data.mobileNo,
-                    email: data.email,
-                    concern: data.concern,
-                });
-                setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
+                }
+                else {
+                    const res = await axios.post(`${process.env.REACT_APP_API_URL}/query`, {
+                        name: data.name,
+                        countryCode: data.countryCode,
+                        mobileNo: data.mobileNo,
+                        email: data.email,
+                        concern: data.concern,
+                    });
+                    if (res) {
+                        toast.success("Send Successfully");
+                    }
+                    // console.log('res', res);
+                    setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
+
+                }
+            } catch (error) {
 
             }
 
@@ -54,7 +70,7 @@ const ContactElement = ({ details }) => {
             </div>
 
             <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:justify-center md:gap-[150px]'>
-                <form action="" className='flex flex-col items-center gap-6 z-10'>
+                <form onSubmit={HandleSubmit} className='flex flex-col items-center gap-6 z-10'>
                     <div >
                         <p className='text-[14px] text-[#2e2c43] pl-4 pb-2'>Name</p>
                         <input type="text"
@@ -113,7 +129,7 @@ const ContactElement = ({ details }) => {
                             className='w-[350px] h-[180px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] py-[18px] text-black placeholder-[#dbcdbb]'
                         />
                     </div>
-                    <button onClick={HandleSubmit} className='w-[300px] md:w-[350px] h-[74px] bg-[#fb8c00] rounded-md text-white font-bold text-[18px]'>{details.submit}</button>
+                    <button type='submit' className='w-[300px] md:w-[350px] h-[74px] bg-[#fb8c00] rounded-md text-white font-bold text-[18px]'>{details.submit}</button>
                 </form>
 
                 <div>
