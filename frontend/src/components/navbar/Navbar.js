@@ -80,7 +80,7 @@ const Navbar = () => {
                         <Link to='/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`}>Contact Us</Link>
                     </div>
                 </div>
-                <div className='w-full flex '>
+                <div className='w-full flex scale-110 pl-2'>
                     <a href="#" className='pt-[60px]'>
                         <img src={appStore} alt="appStore" width="100px" height="44px" />
                     </a>
