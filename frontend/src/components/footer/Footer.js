@@ -22,14 +22,14 @@ const Footer = () => {
                     <p>284002</p>
                     <div className='max-sm:flex flex-col hidden my-2'>
                         <p className='flex text-[#2e2c43] font-bold'>Help Center</p>
-                        <p className='flex flex-col '><Link to='/contact/report'> Report Concern </Link> <Link to='/contact'>Contact Us</Link><Link to='/earn' >Terms and Conditions</Link> </p>
+                        <p className='flex flex-col '><Link to='/contact/report'> Report Concern </Link> <Link to='/contact'>Contact Us</Link><Link to={{ pathname: '/earn', search: `?id=termandcondition` }} >Terms and Conditions</Link> </p>
                         <p className='flex mt-[15px] font-bold text-[#2e2c43]'>Careers</p>
                         <p>Open Opportunities</p>
                     </div>
                 </div>
                 <div className='max-sm:hidden'>
                     <p className='flex text-[#2e2c43] font-bold'>Help Center</p>
-                    <p className='flex flex-col '><Link to='/contact/report'> Report Concern </Link> <Link to='/contact'>Contact Us</Link> <Link to='/earn' >Terms and Conditions</Link></p>
+                    <p className='flex flex-col '><Link to='/contact/report'> Report Concern </Link> <Link to='/contact'>Contact Us</Link> <Link to={{ pathname: '/earn', search: `?id=termandcondition` }}>Terms and Conditions</Link></p>
                     <p className='flex mt-[15px] font-bold text-[#2e2c43]'>Careers</p>
                     <p>Open Opportunities</p>
                 </div>

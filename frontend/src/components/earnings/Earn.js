@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import earning1 from '../../assets/earnings/earning1.svg';
 import earning2 from '../../assets/earnings/earning2.svg';
 import '../../index.css';
+import { useLocation } from 'react-router-dom';
 
 const Earn = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        console.log('location', location.search);
+        if (location.search.includes("termandcondition")) {
+            console.log('location');
+            window.scrollTo({
+                top: 1200,
+                behavior: 'smooth'
+            });
+        }
+    }, [location]);
+
     return (
         <div className='max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px]'>
             <div>

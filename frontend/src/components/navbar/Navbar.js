@@ -44,7 +44,7 @@ const Navbar = () => {
     }, [updatedURL]);
 
     useEffect(() => {
-        if (!updatedURL.includes('services')) {
+        if (!updatedURL.includes('services') && !location.search.includes("termandcondition")) {
             window.scrollTo(0, 0);
         }
     }, [updatedURL]);
