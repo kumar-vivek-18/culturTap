@@ -57,7 +57,7 @@ const Footer = () => {
                         <img src={appStore} alt="logo" loading='lazy' width="100px" height="44px" />
                     </a>
                     <a href='#' className='cursor-pointer pt-1 '>
-                        <img src={playStore} alt="logo" loading='lazy' width="120px" height="64px" />
+                        <img src={playStore} alt="logo" loading='lazy' width="115px" height="55px" />
                     </a>
                 </div>
 
