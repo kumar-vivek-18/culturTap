@@ -54,7 +54,7 @@ const ContactElement = ({ details }) => {
             </div>
 
             <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:justify-center  md:gap-[150px]'>
-                <form action="" className='flex flex-col items-center gap-6'>
+                <form action="" className='flex flex-col items-center gap-6 z-50'>
                     <div >
                         <p className='text-[14px] text-[#2e2c43] pl-4 pb-2'>Name</p>
                         <input type="text"
