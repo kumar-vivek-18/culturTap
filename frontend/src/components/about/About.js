@@ -75,7 +75,7 @@ const About = () => {
                 <p className='text-[16px] mt-[43px] max-sm:mt-[20px]'>Culturtap is a travel based community app that aims to make your travel easier by providing real-time updates and connecting you with people whenever you need help to makes your travel easier, safer and enjoyable.
                 </p>
                 <p className='text-[16px] mt-[25px]'>
-                    <span className='font-bold'>Download CulturTap app:</span>  which helps you to explore the whole culture of your selected destinations with just a few taps! <br />
+                    <span className='font-bold'>Download CulturTap app:</span>  which helps you to explore the whole culture of your selected destinations with just a few taps!
                     Plan better - explore more!
                 </p>
                 <p className='text-[16px] mt-[25px]'>

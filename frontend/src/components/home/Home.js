@@ -140,38 +140,102 @@ const Home = () => {
     ]
 
     // Function to calculate active index based on scroll position
+    // const calculateActiveIndex = () => {
+    //     const contentElement = contentRef.current;
+    //     const scrollLeft = contentElement.scrollLeft;
+    //     const containerWidth = 370;
+    //     const activeIndex = Math.round(scrollLeft / containerWidth);
+    //     setActiveIndex(activeIndex);
+    // };
+
+
     const calculateActiveIndex = () => {
         const contentElement = contentRef.current;
         const scrollLeft = contentElement.scrollLeft;
-        const containerWidth = 400;
-        const activeIndex = Math.round(scrollLeft / containerWidth);
-        setActiveIndex(activeIndex);
-    };
+        const containerWidth = 300;
+        const totalWidth = contentElement.scrollWidth;
+        let newIndex;
 
+        if (scrollLeft === 0) {
+            newIndex = 0;
+        } else if (scrollLeft + containerWidth >= totalWidth) {
+            newIndex = 0;
+        } else {
+            newIndex = Math.floor(scrollLeft / containerWidth);
+        }
+
+        setActiveIndex(newIndex);
+    };
     // Attach scroll event listener
+
     useEffect(() => {
         const handleScroll = () => {
             calculateActiveIndex();
         };
 
+        const interval = setInterval(() => {
+            const contentElement = contentRef.current;
+            const containerWidth = contentElement.offsetWidth;
+            const totalWidth = contentElement.scrollWidth;
+
+            if (contentElement.scrollLeft + containerWidth >= totalWidth) {
+                contentElement.scrollTo({
+                    left: 0,
+                    behavior: 'auto',
+                });
+            } else {
+                contentElement.scrollTo({
+                    left: contentElement.scrollLeft + 1,
+                    behavior: 'auto',
+                });
+            }
+        }, 20); // Adjust the interval as needed for desired scrolling speed
+
         contentRef.current.addEventListener('scroll', handleScroll);
 
         return () => {
+            clearInterval(interval);
             contentRef?.current?.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         calculateActiveIndex();
+    //     };
+
+    //     contentRef.current.addEventListener('scroll', handleScroll);
+
+    //     return () => {
+    //         contentRef?.current?.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+
+    // const contentRef = useRef(null);
+
+    // useEffect(() => {
+    //     const scrollContent = contentRef.current;
+    //     const scrollWidth = scrollContent.scrollWidth;
+    //     const animationDuration = (scrollWidth / 100) * 1; // Adjust speed as needed
+    //     scrollContent.style.animationDuration = `${animationDuration}s`;
+    // }, []);
     return (
         <div className='w-screen md:mt-[60px] max-sm:pt-[100px] -z-50'>
-            <div className='flex ml-[10px] mr-[10px] mx-auto sm:ml-[50px] sm:mr-[20px] lg:ml-[197px] lg:mr-[150px] gap-[71px] overflow-x-scroll scrollbar-hidden' ref={contentRef}>
-                {scroller.map((item, index) => (
-                    <div key={index} className={`w-[320px] h-[340px] md:w-[380px] md:h-[350px] lg:w-[545px] lg:h-[423px] rounded-2xl flex-shrink-0 md:shadow-slate-600 shadow-sm  m-2 mb-10 ${activeIndex === index ? 'active' : ''}`}>
-                        <div className='w-full flex justify-center pt-[18px]'>
-                            <img src={item.link} alt="scrollers" loading='lazy' className='w-[300px] h-[200px] lg:w-[340px] lg:h-[250px] scale-105' />
+            <div className='pl-[10px] mr-[10px] mx-auto sm:pl-[50px] sm:pr-[20px] lg:pl-[197px] lg:pr-[150px]'>
+
+                <div className='flex  gap-[50px]  overflow-x-scroll scrollbar-hidden' ref={contentRef}>
+
+                    {scroller.map((item, index) => (
+
+                        <div key={index} className={`w-[320px] h-[340px] md:w-[380px] md:h-[350px] lg:w-[480px] lg:h-[400px] rounded-2xl flex-shrink-0 md:shadow-slate-600 shadow-sm  m-2 mb-10 ${activeIndex === index ? 'active' : ''}`}>
+                            <div className='w-full flex justify-center pt-[18px]'>
+                                <img src={item.link} alt="scrollers" loading='lazy' className='w-[300px] h-[200px] lg:w-[340px] lg:h-[250px] scale-105 -z-50' />
+                            </div>
+                            <div className='text-[20px] flex justify-center pt-[60px]'>{item.title}</div>
                         </div>
-                        <div className='text-[20px] flex justify-center pt-[60px]'>{item.title}</div>
-                    </div>
-                ))}
+                    ))}
+
+                </div>
             </div>
             <div className="bullet-points">
                 {scroller.map((item, index) => (

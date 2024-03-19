@@ -42,3 +42,18 @@ body {
   width: 30px;
   border-radius: 30%;
 }
+
+
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.overflow-x-scroll {
+  animation: autoScroll linear infinite;
+}

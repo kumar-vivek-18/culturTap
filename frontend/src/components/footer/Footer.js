@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='w-full lg:w-1/2 flex max-sm:flex-col max-sm:pl-[30px]  max-sm:gap-4 lg:justify-between justify-evenly'>
                 <div className=''>
                     <p>@2024 All rights reserved to </p>
-                    <p> CulturTap Tourism Indai Pvt. Ltd.</p>
+                    <p> CulturTap Tourism India Pvt. Ltd.</p>
                     <div className='flex mt-[26px] font-bold text-[#2e2c43]'>Registered Office</div>
                     <p>189/2, Out side datia gate,</p>
                     <p>Jhansi, Uttar Pradesh, India.</p>

@@ -56,12 +56,12 @@ const Navbar = () => {
         <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between gap-10 md:px-[20px] max-sm:mt-0 max-lg:pb-[20px]  max-lg:pr-[30px] bg-white z-50'>
             <div className='pt-[14px] md:pl-[14px] max-lg:pl-[30px] relative'>
                 <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[102px] lg:h-[102px]' />
-                <div className='absolute max-lg:hidden top-[170px] left-[8px]'>
+                <div className='absolute max-lg:hidden top-[170px] left-[8px] z-50'>
                     <img src={culturTapName} alt="culturTap" />
                 </div>
             </div>
             <div className='w-[840px] hidden lg:flex lg:gap-4 justify-around text-[#2f2341] text-[16px]'>
-                <div className='w-full flex pt-[65px] gap-[40px]'>
+                <div className='w-full flex pt-[65px] gap-[40px] '>
 
 
                     <div className='w-[max-content]'>
@@ -82,10 +82,10 @@ const Navbar = () => {
                 </div>
                 <div className='w-full flex '>
                     <a href="#" className='pt-[46px]'>
-                        <img src={appStore} alt="appStore" width="149px" height="44px" />
+                        <img src={appStore} alt="appStore" width="135px" height="44px" />
                     </a>
                     <a href="#" className='pt-[36px]'>
-                        <img src={playStore} alt="playStore" width="165px" height="64px" />
+                        <img src={playStore} alt="playStore" width="153px" height="64px" />
                     </a>
                 </div>
             </div>
