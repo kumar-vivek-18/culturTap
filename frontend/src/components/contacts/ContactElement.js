@@ -16,18 +16,16 @@ const ContactElement = ({ details }) => {
 
     const HandleSubmit = async (e) => {
         e.preventDefault();
-        console.log(data);
         if (data.name.length > 0 && data.email.length > 0 && data.mobileNo.length > 0 && data.concern.length > 0) {
-            // const res = await axios.post(``);
-            console.log('obj', details.type);
+
             const apiuri = process.env.REACT_APP_API_URL;
-            console.log('api', apiuri);
+
 
             if (details.type === "Contact us!") {
-                console.log('hii');
+
 
                 const res = await axios.post(`${apiuri}/contact`, data);
-                console.log('res', res);
+
                 setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
 
             }
@@ -39,7 +37,6 @@ const ContactElement = ({ details }) => {
                     email: data.email,
                     concern: data.concern,
                 });
-                console.log('res', res);
                 setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
 
             }
@@ -50,15 +47,15 @@ const ContactElement = ({ details }) => {
     }
 
     return (
-        <div className='max-lg:pl-[20px] lg:ml-[180px] md:mt-[66px] max-sm:pt-[100px] overflow-x-hidden'>
-            <div>
+        <div className='max-lg:pl-[0px] lg:ml-[180px] md:mt-[66px] max-sm:pt-[100px] overflow-x-hidden'>
+            <div className='max-lg:pl-[30px] '>
                 <h2 className='text-[40px] heading-color font-bold  max-sm:text-[28px]'>{details.type}</h2>
                 <p className='text-[16px] text-[#001b33]'>{details.title}</p>
             </div>
 
             <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:justify-center  md:gap-[150px] '>
                 <form action="" className='flex flex-col items-center gap-6'>
-                    <div>
+                    <div >
                         <p className='text-[14px] text-[#2e2c43] pl-4 pb-2'>Name</p>
                         <input type="text"
                             placeholder='Kishor Kumar'
@@ -127,4 +124,4 @@ const ContactElement = ({ details }) => {
     )
 }
 
-export default ContactElement
+export default ContactElement;
