@@ -18,6 +18,7 @@ const Earn = () => {
         }
     }, [location]);
 
+
     return (
         <div className='max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px]'>
             <div>
