@@ -17,9 +17,36 @@ const ContactElement = ({ details }) => {
     const HandleSubmit = async (e) => {
         e.preventDefault();
         console.log(data);
-        // const res = await axios.post(``);
+        if (data.name.length > 0 && data.email.length > 0 && data.mobileNo.length > 0 && data.concern.length > 0) {
+            // const res = await axios.post(``);
+            console.log('obj', details.type);
+            const apiuri = process.env.REACT_APP_API_URL;
+            console.log('api', apiuri);
 
-        setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
+            if (details.type === "Contact us!") {
+                console.log('hii');
+
+                const res = await axios.post(`${apiuri}/contact`, data);
+                console.log('res', res);
+                setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
+
+            }
+            else {
+                const res = await axios.post(`${process.env.REACT_APP_API_URL}/query`, {
+                    name: data.name,
+                    countryCode: data.countryCode,
+                    mobileNo: data.mobileNo,
+                    email: data.email,
+                    concern: data.concern,
+                });
+                console.log('res', res);
+                setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
+
+            }
+
+
+        }
+
     }
 
     return (

@@ -3,11 +3,11 @@ import connectDB from './db/db.js';
 import colors from 'colors';
 import dotenv from 'dotenv';
 import Routes from '../src/routes/route.js';
-
+import cors from 'cors';
 dotenv.config();
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 
 connectDB()
     .then(() => {
