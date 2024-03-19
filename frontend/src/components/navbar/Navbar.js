@@ -43,6 +43,11 @@ const Navbar = () => {
 
     }, [updatedURL]);
 
+    useEffect(() => {
+        if (!updatedURL.includes('services')) {
+            window.scrollTo(0, 0);
+        }
+    }, [updatedURL]);
     const handleNav = () => {
         setisOpen(!isOpen);
     }
