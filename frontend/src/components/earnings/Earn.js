@@ -25,9 +25,9 @@ const Earn = () => {
                 <h2 className='text-[38px] heading-color font-extrabold  max-sm:text-[28px]'>Earn with us!</h2>
                 <p className='text-[14px]'>Help others to start your earnings.  </p>
             </div>
-            <div className='flex max-md:flex-col gap-4 md:gap-[135px] md:mt-[50px] items-center md:pl-5'>
-                <div className='md:scale-150'>
-                    <img src={earning1} alt="logo" loading='lazy' width='324px' height='304px' className='scale-125' />
+            <div className='w-full flex max-lg:flex-col gap-4 md:gap-[135px] md:mt-[50px] items-center md:pl-5'>
+                <div className='md:scale-150 '>
+                    <img src={earning1} alt="logo" loading='lazy' width='450px' height='300px' className='scale-125 ' />
                 </div>
                 <div className=''>
                     <h2 className='text-[22px] font-bold heading-color  max-sm:text-[20px]'>Become a Trip Planner :</h2>
@@ -38,7 +38,7 @@ const Earn = () => {
                     <p className='text-[14px] mt-6 font-semibold text-[#2e2c43]'>Download app now to know more... </p>
                 </div>
             </div>
-            <div className='flex max-md:flex-col-reverse md:mt-[100px] items-center gap-[0px] md:gap-[90px]'>
+            <div className='flex  max-lg:flex-col-reverse md:mt-[100px] items-center gap-[0px] md:gap-[100px]'>
                 <div className='md:w-3/5'>
                     <p className='heading-color text-[22px] font-bold max-sm:text-[18px]'>Become an Immediate Local assistant :</p>
                     <p className='text-[14px] w-10/11'>Be the saviour of your nearby needy tourists. Saving life is the work of God. These customised requests  and orders need
@@ -49,7 +49,7 @@ const Earn = () => {
                         Set yourself a Immediate local assistant & Earn money !</p>
                     <p className='text-[14px] mt-6 font-semibold text-[#2e2c43]'>Download app now to know more....</p>
                 </div>
-                <div className='md:transform md:scale-150 max-md:scale-150'>
+                <div className='md:transform md:scale-150 max-md:scale-150 '>
                     <img src={earning2} alt="logo" loading='lazy' width="325px" height="304px" className='scale-125' />
                 </div>
             </div>
