@@ -20,7 +20,7 @@ const Earn = () => {
 
 
     return (
-        <div className='max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px]'>
+        <div className='max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden'>
             <div>
                 <h2 className='text-[38px] heading-color font-extrabold  max-sm:text-[28px]'>Earn with us!</h2>
                 <p className='text-[14px]'>Help others to start your earnings.  </p>
