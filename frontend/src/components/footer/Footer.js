@@ -44,7 +44,7 @@ const Footer = () => {
                     <a href='#' className='w-[32px] h-[32px] pt-[2px] cursor-pointer'>
                         <img src={twitter} alt="logo" loading='lazy' />
                     </a>
-                    <a href='#' className='w-[32px] h-[32px] cursor-pointer'>
+                    <a href='https://www.linkedin.com/company/culturtap/' className='w-[32px] h-[32px] cursor-pointer'>
                         <img src={linkedin} alt="logo" loading='lazy' />
                     </a>
                     <a href='#' className='w-[32px] h-[32px] cursor-pointer' >
