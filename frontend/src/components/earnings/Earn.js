@@ -25,9 +25,9 @@ const Earn = () => {
                 <h2 className='text-[38px] heading-color font-extrabold  max-sm:text-[28px]'>Earn with us!</h2>
                 <p className='text-[14px]'>Help others to start your earnings.  </p>
             </div>
-            <div className='flex max-md:flex-col gap-4 md:gap-[135px] md:mt-[50px] items-center'>
-                <div className='md:scale-125'>
-                    <img src={earning1} alt="logo" loading='lazy' width='324px' height='304px' />
+            <div className='flex max-md:flex-col gap-4 md:gap-[135px] md:mt-[50px] items-center md:pl-5'>
+                <div className='md:scale-150'>
+                    <img src={earning1} alt="logo" loading='lazy' width='324px' height='304px' className='scale-125' />
                 </div>
                 <div className=''>
                     <h2 className='text-[22px] font-bold heading-color  max-sm:text-[20px]'>Become a Trip Planner :</h2>
