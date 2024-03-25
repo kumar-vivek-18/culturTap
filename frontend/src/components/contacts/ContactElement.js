@@ -69,7 +69,7 @@ const ContactElement = ({ details }) => {
                 <p className='text-[14px] text-[#001b33]'>{details.title}</p>
             </div>
 
-            <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:justify-center md:gap-[150px]'>
+            <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:items-center md:gap-[100px]  '>
                 <form onSubmit={HandleSubmit} className='flex flex-col items-center gap-6 z-10'>
                     <div >
                         <p className='text-[14px] text-[#2e2c43] pl-4 pb-2'>Name</p>
@@ -84,7 +84,7 @@ const ContactElement = ({ details }) => {
                     </div>
                     <div className='flex gap-[16px]'>
                         <div>
-                            <p className='text-[14px] text-[#2e2c43] pl-4 pb-2'>Country Code</p>
+                            <p className='text-[14px] w-[max-content] text-[#2e2c43] pl-4 pb-2'>Country Code</p>
                             <input type="text"
                                 placeholder='+91'
                                 name='countryCode'
@@ -133,7 +133,7 @@ const ContactElement = ({ details }) => {
                 </form>
 
                 <div>
-                    <img src={details.img} alt="contact" className='flex  w-[754px] h-[535px] scale-150  ' />
+                    <img src={details.img} alt="contact" className='flex  w-[754px] h-[535px] max-md:px-[30px] max-lg:px-[100px] lg:pr-[70px] ' />
                 </div>
             </div>
         </div>
