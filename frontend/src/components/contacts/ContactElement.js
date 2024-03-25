@@ -133,7 +133,7 @@ const ContactElement = ({ details }) => {
                 </form>
 
                 <div>
-                    <img src={details.img} alt="contact" className='flex  w-[754px] h-[535px] max-md:px-[30px] max-lg:px-[100px] lg:pr-[70px] ' />
+                    <img src={details.img} alt="contact" className='flex  w-[754px] h-[570px] max-md:px-[30px] max-lg:px-[100px] lg:pr-[70px] ' />
                 </div>
             </div>
         </div>
