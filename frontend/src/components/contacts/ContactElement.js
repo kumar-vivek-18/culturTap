@@ -69,7 +69,7 @@ const ContactElement = ({ details }) => {
                 <p className='text-[14px] text-[#001b33]'>{details.title}</p>
             </div>
 
-            <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:items-center md:gap-[100px]  '>
+            <div className='md:mt-[69px] flex max-lg:flex-col-reverse max-lg:items-center md:gap-[100px] lg:gap-[150px] '>
                 <form onSubmit={HandleSubmit} className='flex flex-col items-center gap-6 z-10'>
                     <div >
                         <p className='text-[14px] text-[#2e2c43] pl-4 pb-2'>Name</p>
