@@ -33,6 +33,7 @@ const Footer = () => {
                     <p className='flex mt-[15px] font-bold text-[#2e2c43]'>Careers</p>
                     <p>Open Opportunities</p>
                 </div>
+
             </div>
 
             <div className='max-lg:w-full flex flex-col max-sm:items-start max-lg:items-center max-sm:pl-[30px]'>
