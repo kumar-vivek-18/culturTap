@@ -202,7 +202,7 @@ const Home = () => {
 
                         <div key={index} className={`w-[320px] h-[340px] md:w-[380px] md:h-[350px] lg:w-[480px] lg:h-[400px] rounded-2xl flex-shrink-0 md:shadow-slate-600 shadow-sm  m-2 mb-10 ${activeIndex === index ? 'active' : ''}`}>
                             <div className='w-full flex justify-center pt-[18px]'>
-                                <img src={item.link} alt="scrollers" loading='lazy' className='w-[300px] h-[200px] lg:w-[340px] lg:h-[250px] scale-105 -z-50' />
+                                <img src={item.link} alt="culturtap-works" className='w-[300px] h-[200px] lg:w-[340px] lg:h-[250px] scale-105 -z-50' />
                             </div>
                             <div className='text-[18px] flex justify-center pt-[60px]'>{item.title}</div>
                         </div>
@@ -238,7 +238,7 @@ const Home = () => {
                 {
                     locations.map((item, index) => (
                         <div key={item.id} className='rounded-xl'>
-                            <img src={item.link} alt="locations" className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] object-none rounded-xl" loading='lazy' />
+                            <img src={item.link} alt="culturtap-destinations" className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] object-none rounded-xl" loading='lazy' />
                         </div>
                     ))
                 }
