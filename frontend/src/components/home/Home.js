@@ -230,8 +230,8 @@ const Home = () => {
 
 
             <div className='w-full flex flex-col pl-[20px] sm:pl-[50px] lg:pl-[220px] mt-[45px]'>
-                <div className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>New Locations?</div>
-                <div className='text-[14px]'>Explore the culture of your next destination</div>
+                <h1 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>New Locations?</h1>
+                <p className='text-[14px]'>Explore the culture of your next destination</p>
             </div>
 
             <div className='w-screen flex flex-wrap  lg:pl-[180px] gap-[20px] mt-10 max-lg:justify-center'>
@@ -242,9 +242,9 @@ const Home = () => {
                         </div>
                     ))
                 }
-                <div className='w-[100px] h-[100px] md:w-[140px] md:h-[140px] flex justify-center items-center bg-[#ddd8b1] rounded-lg font-semibold text-[18px] p-2'>
+                <p className='w-[100px] h-[100px] md:w-[140px] md:h-[140px] flex justify-center items-center bg-[#ddd8b1] rounded-lg font-semibold text-[18px] p-2'>
                     & lot more...
-                </div>
+                </p>
             </div>
         </div>
     );

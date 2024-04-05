@@ -71,7 +71,7 @@ const About = () => {
     return (
         <div className='max-lg:px-[30px] mx-auto lg:ml-[180px] mt-[20px] max-sm:pt-[100px]'>
             <div className='lg:mr-[186px]'>
-                <h2 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>About Us</h2>
+                <h1 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>About Us</h1>
                 <p className='text-[14px] mt-[43px] max-sm:mt-[20px]'>Culturtap is a travel based community app that aims to make your travel easier by providing real-time updates and connecting you with people whenever you need help to makes your travel easier, safer and enjoyable.
                 </p>
                 <p className='text-[14px] mt-[25px]'>
@@ -87,7 +87,7 @@ const About = () => {
 
             }
             <div className='mt-[76px]'>
-                <h2 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>Services</h2>
+                <h1 className='text-[38px] font-extrabold heading-color max-sm:text-[28px]'>Services</h1>
                 <p className='test-[14px]'>We offered services related to tour planning & tourist safety. </p>
                 <div className='flex max-md:flex-col max-md:items-center mt-[44px] gap-[25px]'>
 
