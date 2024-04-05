@@ -8,6 +8,7 @@ import About from './components/about/About';
 import Earn from './components/earnings/Earn';
 import Contacts from './components/contacts/Contacts';
 import Reports from './components/contacts/Reports';
+import Error from './components/utils/Error';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path='/earn' element={<Earn />} />
         <Route exact path='/contact' element={<Contacts />} />
         <Route exact path='/contact/report' element={<Reports />} />
+        <Route path="*" element={<Error />} />
       </Routes>
 
       <Footer />
