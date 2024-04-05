@@ -56,7 +56,7 @@ const About = () => {
             modalLink: service2modal,
             title: "Immediate Local Assistant",
             desc: "Get a friendly Local assistant while you travel and solve your emergency tasks with the help of our most positive and helpful people of CulturTap Community ",
-            extra: "(ex; need a mechanic for your car, out of fuel, Medical assistance& much more you can imagine ) "
+            extra: "(ex: need a mechanic for your car, out of fuel, Medical assistance& much more you can imagine ) "
         },
         {
             id: 3,
