@@ -54,7 +54,8 @@ const ContactElement = ({ details }) => {
 
                 }
             } catch (error) {
-
+                toast.error("Error Occured");
+                return;
             }
 
 

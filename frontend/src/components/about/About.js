@@ -98,8 +98,7 @@ const About = () => {
                                     <img src={service.link} alt="services" className="object-none rounded-t-3xl" />
                                     <h3 className='w-3/5 mt-[35px] flex heading-color text-[18px] mx-auto justify-center text-center font-bold '>{service.title}</h3>
                                     <p onClick={() => { openModal(); setModalData(service); }} className='w-[max-content] mx-auto justify-center cursor-pointer mt-[31px] text-[14px] text-[#fbbc00] border-b-2 border-[#fbbc00] pb-1'>Know more</p>
-                                    {/* {console.log('servidceee', service)}; */}
-                                    {/* <ServicesModal isOpen={isOpen} onClose={closeModal} service={service} /> */}
+
 
                                 </div>
                             )
